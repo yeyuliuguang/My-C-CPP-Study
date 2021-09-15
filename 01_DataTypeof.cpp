@@ -21,7 +21,6 @@ int main(){
 
     unsigned int unint = 429496;
     cout << typeid(unint).name() << endl;
-
     string tmp;
     cin >> tmp;
     return 0;
