@@ -11,6 +11,7 @@
         "*.tcc": "c",
         "typeinfo": "c",
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "random": "cpp"
     }
 }
