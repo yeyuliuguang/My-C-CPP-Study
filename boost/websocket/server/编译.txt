@@ -1,0 +1,11 @@
+websocket_server_coro.cpp
+gcc websocket_server_coro.cpp -o websocket_server -l boost_coroutine -l stdc++ -l pthread
+
+
+websocket_server_fast.cpp
+gcc websocket_server_fast.cpp -o websocket_server_fast -l boost_chrono -l pthread -l stdc++ -l boost_coroutine
+启动
+./websocket_server_fast 0.0.0.0 8080 1
+starting-port+0 for synchronous, #8080 同步
+starting-port+1 for asynchronous, #8081 异步
+starting-port+2 for coroutine.  #8082 协程

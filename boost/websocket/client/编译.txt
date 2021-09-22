@@ -1,0 +1,3 @@
+websocket_client_coro.cpp
+gcc websocket_client_coro.cpp -o websocket_client_coro -l boost_chrono -l pthread -l stdc++ -l boost_coroutine
+./websocket_client_coro 127.0.0.1 8080 "aaaaaaaaaassssssssssssssssssssssssssss"
