@@ -6,4 +6,4 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
 # 指定生成目标
 #ADD_EXECUTABLE(main ${DIR_SRCS})
-ADD_EXECUTABLE(main ./main.c)
+ADD_EXECUTABLE(../build/bybit ./main.cpp)
