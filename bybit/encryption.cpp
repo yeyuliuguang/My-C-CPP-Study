@@ -31,6 +31,7 @@ std::string HmacEncode( const char * key, const char * input) {
         return std::string(buf);
 }
 
+  // param 参数  secret 密钥
 std::string GetSignature(Params param, std::string secret){
     std::string input = "";
     for(Params::iterator it=param.begin();it!=param.end();++it){
@@ -41,6 +42,10 @@ std::string GetSignature(Params param, std::string secret){
 
 
 int main(){
-    
+    std::string strcode = "";
+    Params strparam = "5IeURJO6AbHY4ZeLUV";
+    std::string strpasswd = "E5KO9zu7GdZhS059Lj8W0QDTHwhMA7tbBLRD";
+    strcode = GetSignature(strparam,strpasswd);
+
     return 0;
 }
